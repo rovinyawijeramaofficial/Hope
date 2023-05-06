@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_wh"
+                    android:layout_height="@dimen/menu_wh"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/menu_padding"
+                    android:src="@drawable/menu"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_wh"
+                    android:layout_height="@dimen/icon_wh"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginEnd="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:padding="@dimen/icon_padding"
+                    android:src="@drawable/icon"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="382dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:hint="charity manage"
+                android:text="Charity Manage"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/topic_text"
+                android:textStyle="bold" />
+
+            <include layout ="@layout/profile_pic" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="363dp"
+        android:fadeScrollbars="true"
+        android:scrollbarSize="20dp"
+        android:scrollbarStyle="insideInset">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/fetchChar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/btn1"
+                android:text="View Charities" />
+
+
+            <Button
+                android:id="@+id/addChar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/btn2"
+                android:text="Add charities" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

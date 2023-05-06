@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name" translatable="false">mad</string>
+    <string name="title" translatable="false">Membership Form</string>
+    <string name="name" translatable="false">Full Name</string>
+    <string name="phone" translatable="false">Phone</string>
+    <string name="NIC">"National Identity Card "</string>
+    <string name="Email">Email Address</string>
+    <string name="Gender">Gender</string>
+    <string name="motive">Motivation of the charity</string>
+    <string name="profile_name">My Profile</string>
+    <string name="btn1">Edit Profile</string>
+    <string name="btn2">Add Events</string>
+    <string name="Topic2">Charities</string>
+    <string name="btn3">Join Charity</string>
+    <string name="topic3">Events</string>
+    <string name="topic4">Charity Registration</string>
+    <string name="Terms">Agree to all terms and conditions</string>
+    <string name="Charity" translatable="false">Charity Name</string>
+    <string name="Founder">Charity Founder Name</string>
+    <string name="Motive">Motive of the charity</string>
+
+
+    <!--navigation bar-->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Charlie Devon</string>
+    <string name="nav_header_subtitle">Event Handler</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_Profile">User Profile</string>
+    <string name="menu_Charity">Charities</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_pay">Payments</string>
+    <string name="charity_registration_form">CHARITY REGISTRATION FORM</string>
+    <string name="agree_to_all_terms_and_conditions">Agree to all terms and conditions</string>
+    <string name="submit">Submit</string>
+    <string name="email">Email</string>
+    <string name="my_profile">My Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="add_event">Add Event</string>
+    <string name="charities">CHARITIES</string>
+    <string name="mobile">Mobile</string>
+    <string name="delete">delete</string>
+    <string name="Delete">Delete</string>
+    <string name="join_charity">JOIN CHARITY</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="header_height">83dp</dimen>
+    <dimen name="menu_wh">89dp</dimen>
+    <dimen name="menu_padding">5dp</dimen>
+    <dimen name="icon_wh">100dp</dimen>
+    <dimen name="icon_margin">5dp</dimen>
+    <dimen name="icon_padding">1dp</dimen>
+    <dimen name="topic_text">34sp</dimen>
+    <dimen name="edit_info_size">24sp</dimen>
+    <!--navigation bar-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">190dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

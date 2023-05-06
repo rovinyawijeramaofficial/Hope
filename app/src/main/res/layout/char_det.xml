@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#CCA7D3"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+
+    card_view:cardCornerRAdius="5dp">
+
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="361dp"
+                android:layout_height="109dp"
+                android:orientation="horizontal"
+                card_view:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="122dp"
+                    android:layout_height="100dp"
+                    android:cropToPadding="true"
+                    android:padding="8dp"
+                    android:src="@drawable/org"
+                    card_view:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/charity1"
+                    android:layout_width="123dp"
+                    android:layout_height="73dp"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Charity 1"
+                    android:textColor="#F8554A4A"
+                    android:textSize="24sp"
+                    android:textStyle="bold|normal"
+                    card_view:ignore="HardcodedText,TextSizeCheck" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_verified_24"
+                    card_view:ignore="ContentDescription" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <!--
+        <TextView
+            android:id="@+id/rFounder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Western Province"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/rEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Care Charity"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/rPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SINCE 2010"
+            android:textAlignment="center"
+            android:textSize="16dp" />   -->
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="293dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#6D157C"
+
+            android:hint="@string/btn3"
+            android:text="@string/join_charity"
+            card_view:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+

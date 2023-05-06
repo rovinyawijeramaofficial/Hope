@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.fetchingActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_height"
+                tools:ignore="UselessParent">
+
+
+                <ImageView
+                    android:layout_width="@dimen/menu_wh"
+                    android:layout_height="@dimen/menu_wh"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="5dp"
+                    android:padding="@dimen/menu_padding"
+                    android:src="@drawable/menu"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_wh"
+                    android:layout_height="@dimen/icon_wh"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/icon_margin"
+                    android:layout_marginTop="@dimen/icon_margin"
+                    android:layout_marginEnd="@dimen/icon_margin"
+                    android:layout_marginBottom="@dimen/icon_margin"
+                    android:padding="@dimen/icon_padding"
+                    android:src="@drawable/icon"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/topic4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="sans-serif-black"
+
+                    android:hint="@string/Topic2"
+                    android:text="@string/charities"
+                    android:textAlignment="center"
+                    android:textColor="@color/topic"
+                    android:textSize="@dimen/topic_text"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="814dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints,VisualLintBounds"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="100dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="true"
+            android:scrollbarSize="10dp"
+            android:scrollbarStyle="insideInset"
+            tools:ignore="UselessParent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCharity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/char_det"
+
+
+                />
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        tools:context=".activities.RegisterCharity">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    tools:ignore="UselessParent">
+
+                    <ImageView
+                        android:layout_width="89dp"
+                        android:layout_height="89dp"
+                        android:layout_alignParentStart="true"
+                        android:padding="5dp"
+                        android:src="@drawable/menu"
+                         />
+
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="1dp"
+                        android:src="@drawable/icon"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/topic4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+
+
+                android:hint="@string/topic4"
+                android:text="@string/charity_registration_form"
+                android:textAlignment="center"
+                android:textColor="@color/topic"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginVertical="50dp"
+            android:background="#F3D8F8"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/CharityName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Charity"
+                android:textColor="#121010"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/NICLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Founder"
+                android:hint="@string/NIC"
+                android:textColor="#121010"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nameEditFounder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/emailLabel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:hint="@string/Email"
+                android:textColor="#121010"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+
+                tools:ignore="LabelFor,TextFields" />
+
+
+
+
+            <EditText
+                android:id="@+id/nameEditPhone"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:textColor="#121010"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.194"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/motive"
+                android:hint="@string/motive"
+                android:textColor="#121010"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/nameEditMotive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+
+                tools:ignore="LabelFor,TextFields" />
+
+
+
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/agree_to_all_terms_and_conditions" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitBtnC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_bg"
+            android:text="@string/submit" />
+
+</LinearLayout>
+
+
+
+
+
